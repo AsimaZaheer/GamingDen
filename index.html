@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Gaming Den</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        header {
+            background: #081029;
+            color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        header h1 {
+            text-align: center;
+            background: linear-gradient(to top, rgba(208, 34, 191, 0.723), rgb(0, 7, 144));
+            font-size: 70px;
+            animation: textPop 2s ease;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        .nav-list li {
+            margin: 0;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 8px 12px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-list a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        @media (max-width: 768px) {
+        .navbar {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .nav-list {
+            flex-direction: column;
+            gap: 7px;
+            width: 100%;
+        }
+
+        .nav-list a {
+            font-size: 14px;
+            padding: 10px 15px;
+            width: 100%;
+            display: block;
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .nav-list a {
+            font-size: 12px;
+            padding: 8px 10px;
+        }
+
+        .nav-list {
+            gap: 4px;
+        }
+
+        .navbar img {
+            height: 60px;
+            width: 60px;
+        }
+    }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #081029;
+            color: #fff;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+
+        .homediv {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            background-image: url('flex img.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            animation: fadeIn 2s ease-in-out;
+            text-align: center;
+        }
+        .homediv h1 {
+            font-size: 500%;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            animation: textPop 2s ease;
+            text-align: left;
+            color: #fff;
+        }
+        .homediv p {
+            margin-top: 20px;
+            font-size: 1.2rem;
+            max-width: 800px;
+            line-height: 1.6;
+            color: #ffffff;
+        }
+        .feature-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+            background: linear-gradient(to top, rgba(208, 34, 191, 0.723), rgb(0, 7, 144));
+            color: white;
+        }
+        .feature {
+            background: radial-gradient(circle, #7c4280, #6a2054, #4b0e47, #380231);
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            color: #ffffff;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .feature:hover {
+            transform: scale(1.05);
+        }
+        .feature img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .feature h3 {
+            margin: 15px 0;
+            font-size: 1.5rem;
+        }
+        .feature p {
+            padding: 0 15px 20px;
+            font-size: 1rem;
+            line-height: 1.4;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes textPop {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .mission-vision-section {
+            background-image: url(bg\ img.avif);
+            background-color: #081029;
+            color: #fff;
+            padding: 50px 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 50px;
+        }
+
+        .vision, .mission {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .vision-image, .mission-image {
+            flex: 1;
+            position: relative;
+        }
+
+        .vision-image img, .mission-image img {
+            width: 100%;
+            border-radius: 10px;
+            transform: rotate(-5deg);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .vision-content, .mission-content {
+            flex: 1;
+            text-align: left;
+        }
+
+        .vision-content h2, .mission-content h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+            color: #ff33ff;
+        }
+
+        .vision-points div, .mission-points div {
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .vision-points h3, .mission-points h3 {
+            font-size: 1.5rem;
+            background-color: #ff33ff;
+            color: #fff;
+            border-radius: 50%;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+        }
+
+        .vision-points p, .mission-points p {
+            font-size: 1rem;
+            line-height: 1.6;
+        }
+
+        .footer {
+            background: linear-gradient(to bottom, rgba(208, 34, 191, 0.723), rgb(0, 7, 144));
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .background-design {
+            position: relative;
+            padding: 20px 0;
+        }
+
+        .social-media-icons img, 
+        .download-links img {
+            width: 40px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        .download-links img {
+            height: 40px;
+        }
+
+        .company-info img {
+            height: 50px;
+            margin: 10px;
+        }
+
+        .company-info p {
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 14px;
+        }
+
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><img src="gaming den.jpeg" alt="Gaming Den Logo" height="80" width="80"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <header>
+        <h1>Welcome To Gaming Den</h1>
+    </header>
+    <br>
+    <div class="homediv">
+        <h1>Game On, <br> Limitless</h1>
+        <p>Gaming Den is an innovative gaming company that provides immersive entertainment experiences for gamers worldwide. With a focus on creativity, cutting-edge technology, and player engagement, Gaming Den offers a wide range of games that span various genres, ensuring there's something for everyone.</p>
+    </div>
+    <br>
+    <div class="mission-vision-section">
+        <div class="mission">
+            <div class="mission-image">
+                <img src="mission.jpg" alt="Mission Image">
+            </div>
+            <div class="mission-content">
+                <h2>Our Mission</h2>
+                <div class="mission-points">
+                    <div>
+                        <h3>1</h3>
+                        <p>To deliver immersive and engaging gaming experiences that connect people worldwide.</p>
+                    </div>
+                    <div>
+                        <h3>2</h3>
+                        <p>To push the boundaries of creativity and technology in the gaming industry.</p>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                        <p>To inspire and entertain gamers of all ages through innovation and storytelling.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="vision">
+            <div class="vision-content">
+                <h2>Our Vision</h2>
+                <div class="vision-points">
+                    <div>
+                        <h3>1</h3>
+                        <p>To become a global leader in the gaming industry, recognized for our creativity and impact.</p>
+                    </div>
+                    <div>
+                        <h3>2</h3>
+                        <p>To foster a gaming community that celebrates diversity, inclusion, and collaboration.</p>
+                    </div>
+                    <div>
+                        <h3>3</h3>
+                        <p>To shape the future of gaming by consistently innovating and exploring new possibilities.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="vision-image">
+                <img src="vision.webp" alt="Vision Image">
+            </div>
+        </div>
+    </div>
+    <h1>Features</h1>
+    <div class="feature-section">
+        <div class="feature">
+            <img src="adventure.jpg" alt="Adventure Game">
+            <h3>Adventure Awaits</h3>
+            <p>Explore uncharted worlds and embark on thrilling quests with our adventure games.</p>
+        </div>
+        <div class="feature">
+            <img src="multiplayer.jpg" alt="Multiplayer Game">
+            <h3>Multiplayer Madness</h3>
+            <p>Connect with players around the globe and experience the thrill of competition.</p>
+        </div>
+        <div class="feature">
+            <img src="strategy.webp" alt="Strategy Game">
+            <h3>Strategic Challenges</h3>
+            <p>Test your mind and master the art of strategy with our engaging games.</p>
+        </div>
+    </div><br>
+    <div class="footer">
+        <div class="background-design">
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/"><img src="facebook.jpg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="instagram.jpg" alt="Instagram"></a>
+                <a href="https://www.youtube.com/"><img src="youtube.png" alt="YouTube"></a>
+                <a href="https://www.tiktok.com/explore"><img src="tiktok.png" alt="TikTok"></a>
+                <a href="https://discord.com/"><img src="discord.jpg" alt="Discord"></a>
+            </div>
+            <div class="download-links">
+                <a href="https://play.google.com/store/apps?hl=en"><img src="google play.png" alt="Google Play"></a>
+                <a href="https://www.apple.com/app-store/"><img src="appstore.jpg" alt="App Store"></a>
+                <a href="https://apk.com/"><img src="apk.jpg" alt="APK Download"></a>
+            </div>
+        </div>
+        <div class="company-info">
+            <p>©2025 Gaming Den. All rights reserved.</p>
+        </div>
+        <div class="footer-links">
+            <a href="terms.html">Privacy Policy</a> |
+            <a href="cookies.html">Cookies Policy</a> |
+            <a href="legal notice.html">Legal Notices</a> |
+            <a href="contact.html">Contact Us</a>
+        </div>
+    </div>
+</body>
+</html>
