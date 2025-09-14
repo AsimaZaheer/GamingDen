@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Gaming Den</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            color: #000000;
+            background-color: #f9f9f9;
+            overflow-x: hidden;
+        }
+
+        header {
+            background: #081029;
+            color: #fff;
+            padding: 10px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        .nav-list li {
+            margin: 0;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 8px 12px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-list a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+            padding: 20px 10%;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-size: cover;
+            background-position: center;
+            color: #ffffff;
+            transform: scale(0.95);
+            transition: transform 0.3s, box-shadow 0.3s;
+            background: linear-gradient(to top, rgba(208, 34, 191, 0.723), rgb(0, 7, 144));
+
+        }
+
+        section:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        section h2 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #081029;
+            color: #fff;
+            margin-top: 30px;
+            font-size: 0.9em;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        section {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            color: #fefbfb;
+            text-align: center;
+            background: linear-gradient(to top, rgba(208, 34, 191, 0.723), rgb(0, 7, 144));
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .hero-section {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .hero-section h2 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .hero-section p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .about-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .about-text {
+            flex: 1;
+        }
+
+        .about-text h3 {
+            font-size: 50px;
+            color: #ffffff;
+            margin-bottom: 15px;
+        }
+
+        .about-text p {
+            font-size: 1.1em;
+            line-height: 1.8;
+        }
+
+        .about-image {
+            flex: 1;
+        }
+
+        .about-image img {
+            width: 100%;
+            border-radius: 10px; 
+        }
+
+        .services {
+            text-align: center;
+        }
+
+        .services h2 {
+            font-size: 2.5em;
+            margin-bottom: 30px;
+        }
+
+        .service-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .service-item {
+            background: radial-gradient(circle, #040c24, #132048, #3c4b77, #8c95b0);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+
+        .service-item:hover {
+            transform: scale(1.05);
+        }
+
+        .service-item img {
+            width: 50px;
+            margin-bottom: 15px;
+        }
+
+        .service-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            color: #ffa500;
+        }
+
+        .service-item p {
+            font-size: 1em;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><img src="gaming den.jpeg" alt="Gaming Den Logo" height="80" width="80"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <div class="container">
+        <section class="hero-section">
+            <h2>We Are the Most Prominent Software Provider</h2>
+            <p>At Gaming Den, we strive to deliver cutting-edge technology and unparalleled gaming experiences. Our mission is to lead the marketplace with innovative solutions and a dedication to excellence.</p>
+        </section>
+
+        <section class="image-grid">
+            <img src="team collaboration.jpeg" alt="Team Collaboration">
+            <img src="office environment.png" alt="Office Environment">
+            <img src="gaming setup.jpeg" alt="Gaming Setup" height="210">
+        </section>
+
+        <section class="about-content">
+            <div class="about-text">
+                <h3>Our Story</h3>
+                <main>
+                    <section>
+                        <h2>Founding Story</h2>
+                        <p>Founded in 2018 in Pakistan, Gaming Den began as a passion project for three lifelong friends and gaming enthusiasts. Their shared dream was to create innovative games that pushed the boundaries of storytelling and gameplay.</p>
+                    </section>
+            
+                    <section>
+                        <h2>Milestones and Achievements</h2>
+                        <div class="milestone">2018: Gaming Den released its first indie game, <strong>Legend Hero</strong>, a fast-paced 2D shooter.</div>
+                        <div class="milestone">2020: Their breakthrough came with <strong>Mobile Legends</strong>, an open-world RPG that became a massive hit.</div>
+                        <div class="milestone">2022: Gaming Den introduced <strong>Arcadia VR</strong>, their first virtual reality game.</div>
+                        <div class="milestone">2023: The company launched <strong>Jade Realm</strong>, a MOBA game.</div>
+                    </section>
+            
+                    <section>
+                        <h2>Growth and Expansion</h2>
+                        <p>Starting as a small studio with just 8 developers, Gaming Den has grown into a global gaming powerhouse with over 400 team members across four offices worldwide.</p>
+                    </section>
+            
+                    <section>
+                        <h2>Challenges and Resilience</h2>
+                        <p>In 2021, the company faced a major challenge with the delayed launch of <strong>Starforge Chronicles</strong>. Despite initial backlash, the team remained transparent and delivered an exceptional gaming experience.</p>
+                    </section>
+            
+                    <section>
+                        <h2>Community and Culture</h2>
+                        <p>Gaming Den takes pride in its vibrant and inclusive gaming community, ensuring its games reflect a wide range of cultures and perspectives.</p>
+                    </section>
+            
+                    <section>
+                        <h2>Current Focus and Future Plans</h2>
+                        <p>Gaming Den continues to innovate with their latest title, <strong>Eclipse Odyssey</strong>, set to launch in late 2025. Their mission remains to create unforgettable adventures worldwide.</p>
+                    </section>
+                </main>            </div>
+            <div class="about-image">
+                <img src="our team.jpeg" alt="Our Team" >
+            </div>
+        </section>
+
+        <section class="services">
+            <h2>Our Key Qualities</h2>
+            <div class="service-grid">
+                <div class="service-item">
+                    <img src="fast service.avif" alt="Fast Service">
+                    <h3>Fast Service</h3>
+                    <p>Delivering quick and efficient solutions to meet your needs.</p>
+                </div>
+                <div class="service-item">
+                    <img src="quality code.webp" alt="Quality Code">
+                    <h3>Quality Code</h3>
+                    <p>Writing clean, reliable, and scalable code for every project.</p>
+                </div>
+                <div class="service-item">
+                    <img src="best support.jpg" alt="Best Support">
+                    <h3>Best Support</h3>
+                    <p>Ensuring customer satisfaction with 24/7 support services.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Gaming Den. All rights reserved.</p>
+    </footer>
+</body>
+</html>
