@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Gaming Den</title>
+</head>
+<style>
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    background-color: #f9f9f9;
+}
+
+/* Header Styles */
+header {
+    background: #081029;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-list li {
+    margin: 0;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    padding: 8px 12px;
+    transition: background-color 0.3s;
+}
+
+.nav-list a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+#contact form {
+    max-width: 600px;
+    margin: auto;
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+#contact input, #contact textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#contact button {
+    display: block;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+
+#contact button:hover {
+    background: #04015b;
+}
+
+.footer {
+      /* background: linear-gradient(to bottom, rgba(208, 34, 191, 0.723), rgb(0, 7, 144)); */
+      background-color: #081029;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .background-design {
+      position: relative;
+      padding: 20px 0;
+    }
+
+    .social-media-icons img, 
+    .download-links img {
+      width: 40px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .download-links img {
+      height: 40px;
+    }
+
+    .company-info img {
+      height: 50px;
+      margin: 10px;
+    }
+
+    .company-info p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+
+    .footer-links {
+      margin-top: 20px;
+    }
+
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 14px;
+    }
+
+    .footer-links a:hover {
+      text-decoration: underline;
+    }
+
+</style>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><img src="gaming den.jpeg" alt="Gaming Den Logo" height="80" width="80"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br>
+    <section id="contact">
+        <center><h2>Contact Us</h2>
+        <p>Have a question or want to collaborate? Reach out to us!</p></center>
+        <br>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    <br>
+    <div class="footer">
+      <div class="background-design">
+          <div class="social-media-icons">
+              <a href="https://www.facebook.com/"><img src="facebook.jpg" alt="Facebook"></a>
+              <a href="https://www.instagram.com/"><img src="instagram.jpg" alt="Instagram"></a>
+              <a href="https://www.youtube.com/"><img src="youtube.png" alt="YouTube"></a>
+              <a href="https://www.tiktok.com/explore"><img src="tiktok.png" alt="TikTok"></a>
+              <a href="https://discord.com/"><img src="discord.jpg" alt="Discord"></a>
+          </div>
+          <div class="download-links">
+              <a href="https://play.google.com/store/apps?hl=en"><img src="google play.png" alt="Google Play"></a>
+              <a href="https://www.apple.com/app-store/"><img src="appstore.jpg" alt="App Store"></a>
+              <a href="https://apk.com/"><img src="apk.jpg" alt="APK Download"></a>
+          </div>
+      </div>
+      <div class="company-info">
+          <p>©2025 Gaming Den. All rights reserved.</p>
+      </div>
+      <div class="footer-links">
+          <a href="terms.html">Privacy Policy</a> |
+          <a href="cookies.html">Cookies Policy</a> |
+          <a href="legal notice.html">Legal Notices</a> |
+          <a href="contact.html">Contact Us</a>
+      </div>
+  </div>
+</body>
+</html>
