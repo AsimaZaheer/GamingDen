@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaming Den Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #ffffff;
+        }
+        
+        header {
+            background: #081029;
+            color: #fff;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3.5em;
+            background: linear-gradient(to top, rgba(208, 34, 191, 0.723), rgb(0, 7, 144));
+        }
+
+        p {
+            color: black; 
+            text-align: center;      
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .nav-list {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            margin: 0;
+            padding: 0;
+            align-items: center;
+        }
+
+        .nav-list li {
+            margin: 0;
+        }
+
+        .nav-list a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 16px;
+            padding: 8px 12px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-list a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            background-color: #081029;
+            margin-top: 30px;
+            font-size: 0.9em;
+            p {
+                color: white;
+            }
+        }
+        h3 {
+            color: #ffa500;
+        }
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px;
+        }
+        .game-card {
+            background: radial-gradient(circle, #040c24, #101c42, #23315c, #344371);
+            border-radius: 10px;
+            width: 300px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.3s;
+        }
+        .game-card:hover {
+            transform: scale(1.05);
+        }
+        .game-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .game-card h3 {
+            margin: 10px 0 5px;
+            font-size: 1.5em;
+        }
+        .game-card p {
+            color: white;
+        }
+        .game-card a {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            text-decoration: none;
+            color: #fff;
+            background-color: #ffa500;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .game-card a:hover {
+            background-color: #925f01ca;
+        }
+        
+    </style>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><img src="gaming den.jpeg" alt="Gaming Den Logo" height="80" width="80"></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="login.html">Login/Signup</a></li>
+                <li><a href="news.html">News</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <br>
+    <header><br>
+        <h1>Gaming Den Portfolio</h1><br>
+    </header>
+    <p>Explore our legendary game creations</p>
+    <section class="portfolio">
+        <div class="game-card">
+            <img src="Mobile Legends.jpg" alt="Mobile Legends">
+            <h3>Mobile Legends</h3>
+            <p>An epic MOBA game loved by millions.</p>
+            <a href="mobile-legends-detail.html">View Details</a>
+        </div>
+        <div class="game-card">
+            <img src="COD.jpg" alt="call of duty">
+            <h3>Call of Duty</h3>
+            <p>Experience intense combat across modern battlefields worldwide.</p>
+            <a href="cod.html">View Details</a>
+        </div>
+        <div class="game-card">
+            <img src="Legend of the Swords.png" alt="Legend of Swords">
+            <h3>Legend of Swords</h3>
+            <p>A legendary RPG inspired by Chinese myths.</p>
+            <a href="legend-of-swords-detail.html">View Details</a>
+        </div>
+        <div class="game-card">
+            <img src="Dragon Warrior.jpg" alt="Dragon Warrior">
+            <h3>Dragon Warrior</h3>
+            <p>Unleash your power in a mythical dragon saga.</p>
+            <a href="dragon-warrior-detail.html">View Details</a>
+        </div>
+        <div class="game-card">
+            <img src="Ancient Clash.jpg" alt="Ancient Clash">
+            <h3>Ancient Clash</h3>
+            <p>Battle in the ancient arenas of China.</p>
+            <a href="ancient-clash-detail.html">View Details</a>
+        </div>
+        <div class="game-card">
+            <img src="IGI.webp" alt="Legend of Swords">
+            <h3>Project IGI</h3>
+            <p>Engage in stealth and tactical missions behind enemy lines.</p>
+            <a href="igi.html">View Details</a>
+        </div>
+        <div class="game-card">
+            <img src="Hero Lagends.jpg" alt="Hero Legends">
+            <h3>Hero Legends</h3>
+            <p>Forge your destiny in this heroic adventure.</p>
+            <a href="hero-legends-detail.html">View Details</a>
+        </div>
+        <div class="game-card">
+            <img src="Dynasty Rush.jpg" alt="Dynasty Rush">
+            <h3>Dynasty Rush</h3>
+            <p>Lead your dynasty to glory in this strategy game.</p>
+            <a href="dynasty-rush-detail.html">View Details</a>
+        </div>
+        <div class="game-card">
+            <img src="Jade Legends.jpeg" alt="Jade Realm">
+            <h3>Jade Realm</h3>
+            <p>Explore the mystical Jade Realm in this RPG.</p>
+            <a href="jade-realm-detail.html">View Details</a>
+        </div>
+        <div class="game-card">
+            <img src="Mythic Odyssey.jpg" alt="Mythic Odyssey">
+            <h3>Mythic Odyssey</h3>
+            <p>Embark on an odyssey of myth and legend.</p>
+            <a href="mythic-odyssey-detail.html">View Details</a>
+        </div>
+        <div class="game-card">
+            <img src="Spirit Warrior.jpeg" alt="Warrior Spirit">
+            <h3>Warrior Spirit</h3>
+            <p>Embrace the spirit of a true warrior.</p>
+            <a href="warrior-spirit-detail.html">View Details</a>
+        </div>
+        <div class="game-card">
+            <img src="Mythic Takes.jpeg" alt="Mythic Tales">
+            <h3>Mythic Tales</h3>
+            <p>Immerse yourself in mythical stories.</p>
+            <a href="mythic-tales-detail.html">View Details</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Gaming Den. All rights reserved.</p>
+    </footer>
+</body>
+</html>
